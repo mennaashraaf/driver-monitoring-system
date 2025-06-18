@@ -23,8 +23,8 @@ driver-monitoring/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mennaashraaf/driver-monitoring.git
-   cd driver-monitoring
+   git clone https://github.com/mennaashraaf/driver-monitoring-system.git
+   cd driver-monitoring-system
    ```
 
 2. Ensure your camera device is properly connected and accessible at `/dev/video0`
