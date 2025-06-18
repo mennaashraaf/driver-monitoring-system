@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  capture:
+    build: ./capture
+    ports:
+      - "5555:5555"
+    devices:
+      - "/dev/video0:/dev/video0"
+    privileged: true
+    restart: unless-stopped
+
+  detection:
+    build: ./detection
+    ports:
+      - "5556:5556"
+    depends_on:
+      - capture
+    restart: unless-stopped
+
+  results:
+    build: ./results
+    volumes:
+      - ./shared/results:/shared/results
+    depends_on:
+      - detection
+    restart: unless-stopped
+
