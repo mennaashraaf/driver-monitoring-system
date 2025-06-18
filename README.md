@@ -23,7 +23,7 @@ driver-monitoring/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/driver-monitoring.git
+   git clone https://github.com/mennaashraaf/driver-monitoring.git
    cd driver-monitoring
    ```
 
